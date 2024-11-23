@@ -26,7 +26,7 @@ export default function App() {
   );
 }
 
-console.log(<DifferentContent test={23} />);
+//console.log(<DifferentContent test={23} />);
 
 function Tabbed({ content }) {
   const [activeTab, setActiveTab] = useState(0);
@@ -65,6 +65,8 @@ function Tab({ num, activeTab, onClick }) {
 function TabContent({ item }) {
   const [showDetails, setShowDetails] = useState(true);
   const [likes, setLikes] = useState(0);
+
+  console.log("RENDER");
 
   function handleInc() {
     setLikes(likes + 1);
