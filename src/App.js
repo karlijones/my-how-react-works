@@ -101,7 +101,6 @@ function TabContent({ item }) {
           <span>{likes} ❤️</span>
           <button onClick={handleInc}>+</button>
           <button onClick={handleTripleInc}>+++</button>
-          <button>+++</button>
         </div>
       </div>
 
